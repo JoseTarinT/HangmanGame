@@ -20,7 +20,7 @@ incorrect = []
 def update():
     for i in correct:
         print(i, end = ' ') # end = make that the letters will be printed next to each other
-    print() # Este print() function hace que pasemos a una nueva linea
+    print() 
 
 update()
 parts(len(incorrect))
@@ -31,7 +31,7 @@ while True:
 
     guess = input("Guess a letter: ")
 
-# Way 1: Esta parte es para saber si la letra elegida es correcta y en que posicion
+# Way 1: Here we find out if the chosen letter is correct and in what index
 
     # if guess in picked:
     #     index = 0
@@ -41,11 +41,9 @@ while True:
     #         index += 1
     #     # correct.append(guess)
     #     # print('Correct letters: ', correct)
-    #     update() # We have to call the function 'update()` porque esta unida a la funcion definida 'update()´mas arriba. Si no llamamos a la funcion
-                 # no apareceria nada del codigo arriba escrito. En otras palabras, no apareceria la opcion de ver que letras hemos acertado y su
-                 # orden en la palabra.
+    #     update() 
 
-# Way 2: Para saber si la letra elegida es correcta y en que posicion. (Para mi, mas facil de entender)
+# Way 2: To know if the chosen letter is correct and in what index.
 
     if guess in picked:
         for i in range(len(picked)): 
