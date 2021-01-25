@@ -1,5 +1,5 @@
 import random
-from HangmanParts import parts
+from HangmanParts import parts # We need to import HangmanParts.py to be able to print the parts of the body every time we miss a letter
 
 words_spanish = ["lampara", "pantalla", "escritorio"]
 words_english = ["picnic", "table", "garden"]
